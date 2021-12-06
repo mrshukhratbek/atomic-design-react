@@ -11,13 +11,14 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 13,
+    ecmaVersion: 8,
+    requireConfigFile: false,
     sourceType: 'module',
   },
   plugins: [
     'react',
   ],
   rules: {
-    'linebreak-style': ['0error', process.env.NODE_ENV === 'prod' ? 'unix' : 'windows'],
+    'linebreak-style': 0,
   },
 };
