@@ -1,8 +1,16 @@
 import React from 'react';
 
+import Button from './components/atoms/Button';
+
 const UnAuthenticatedApp = function unAuthenticatedApp() {
   return (
-    <>Ro`yhatdan o`tmagan</>
+    <>
+      <Button>Button</Button>
+      <Button theme="succes">Button</Button>
+      <Button theme="danger">Button</Button>
+      <Button theme="outlined" disabled>Button</Button>
+      Ro`yhatdan o`tmagan
+    </>
   );
 };
 

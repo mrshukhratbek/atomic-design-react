@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Context = React.createContext();
 
-// eslint-disable-next-line react/prop-types
-const Provider = function provider({ children }) {
+const Provider = function provider({ children = 'salom' }) {
   const [token, setToken] = React.useState(
     localStorage.getItem('auth'),
   );
@@ -23,6 +23,14 @@ const Provider = function provider({ children }) {
       {children}
     </Context.Provider>
   );
+};
+
+Provider.propTypes = {
+  children: PropTypes.element,
+};
+
+Provider.defaultProps = {
+  children: 'Not Allowed',
 };
 
 const auth = (settrOnly) => {
