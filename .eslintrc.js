@@ -18,5 +18,6 @@ module.exports = {
     'react',
   ],
   rules: {
+    'linebreak-style': ['0error', process.env.NODE_ENV === 'prod' ? 'unix' : 'windows'],
   },
 };

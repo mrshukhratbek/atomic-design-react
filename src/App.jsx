@@ -1,8 +1,7 @@
-/* eslint linebreak-style: ["error", "windows"] */
 import './App.css';
 import React from 'react';
 
-const App = function nimadir() {
+const App = function app() {
   return <div className="App">App.</div>;
 };
 
