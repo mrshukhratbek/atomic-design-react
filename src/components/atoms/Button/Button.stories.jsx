@@ -18,9 +18,3 @@ const Template = function template(args) {
 };
 
 export const Primary = Template.bind({});
-
-// Primary.args = {
-//   theme: {
-//     options: ['primary', 'secondary'],
-//   },
-// };
